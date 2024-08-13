@@ -1,0 +1,13 @@
+#!/bin/bash
+
+THEME="error"
+DATE=`date "+%m|%d %H.%M"`
+BATTERY=`acpi | grep -o '[0-9]*%'`
+
+if [[ `cat ${THEME_PATH}theme.value` == "0" ]]; then
+	THEME="light"
+elif [[ `cat ${THEME_PATH}theme.value` == "1" ]]; then
+	THEME="dark"
+fi
+
+xsetroot -name "$THEME $DATE $BATTERY"
