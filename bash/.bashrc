@@ -7,7 +7,6 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 PS1='[\w]\$ '
 
-export PATH=$PATH:~/bin
 export SALAMANDER_ROOT=~/programming/graphics/salamander-engine
 export BEMENU_PATH=/home/lucas/.config/bemenu
 export THEME_PATH=/home/lucas/.local/share/theme/
@@ -68,3 +67,4 @@ export tm=/home/lucas/second-hd/SteamLibrary/steamapps/common/tModLoader
 export ANDROID_HOME="${HOME}/android"
 export PATH="${PATH}:${ANDROID_HOME}/platform-tools";
 export PATH="${PATH}:${ANDROID_HOME}/cmdline-tools/bin";
+export CLANGD_FLAGS="--query-driver='/usr/bin/arm-none-eabi-*'"

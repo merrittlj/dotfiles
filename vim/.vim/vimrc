@@ -1,11 +1,18 @@
 call plug#begin()
 Plug 'https://github.com/tomasr/molokai.git' " Theme
+
 Plug 'https://github.com/bfrg/vim-cpp-modern.git' " CPP language additions
+
 Plug 'vim-airline/vim-airline' " Airline status bar
 Plug 'LunarWatcher/auto-pairs' " Pair brackets, parens, etc.
+Plug 'https://tpope.io/vim/surround.git' " cs and stuff to change surroundings, paren, quote, etc.
 Plug 'https://github.com/tpope/vim-fugitive.git' " :Git commands
 Plug 'https://github.com/tpope/vim-commentary' " gc* to comment
-Plug 'https://tpope.io/vim/surround.git' " cs and stuff to change surroundings, paren, quote, etc.
+
+Plug 'https://github.com/prabirshrestha/vim-lsp' " LSP client
+Plug 'https://github.com/mattn/vim-lsp-settings' " Convienent LSP server configurations
+Plug 'https://github.com/prabirshrestha/asyncomplete.vim' " Completion engine
+Plug 'https://github.com/prabirshrestha/asyncomplete-lsp.vim' " Completion engine vim-lsp compatability
 call plug#end()
 
 filetype plugin indent on
