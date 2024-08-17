@@ -20,6 +20,31 @@ function term {
 	kitty
 }
 
+function javapaste {
+	echo
+	for file in *.java;
+	do
+		echo "// $file"
+		cat $file
+		echo
+	done
+}
+
+function battery {
+	# acpi | grep -o '[0-9]*%' | sed 's/[^0-9]//g'
+	# cat /sys/class/power_supply/BAT0/capacity
+	echo "$(echo $(cat /sys/class/power_supply/BAT0/charge_now) / $(cat /sys/class/power_supply/BAT0/charge_full) | bc -l) * 100" | bc -l | xargs printf %.2f
+	echo
+}
+
+function batterylife {
+	echo $(cat /sys/class/power_supply/BAT0/charge_full) / $(cat /sys/class/power_supply/BAT0/charge_full_design) | bc -l
+}
+
+function batterye {
+	ratpoison -c "echo $(cat /sys/class/power_supply/BAT0/status) $(battery)%"
+}
+
 function menu {
 	$BEMENU_PATH/bemenu-run -p bemenu --fn "ProFontOTB 22" --binding vim --border 2 --prefix -- --margin 100 --center --fixed-height --counter always --list "10 up" --single-instance --tb "#000000" --tf "#ffffff" --fb "#ffffff" --ff "#000000" --nb "#ffffff" --nf "#000000" --hb "#ffffff" --hf "##005e8b" --fbb "#ffffff" --fbf "#000000" --sb "#ffffff" --sf "#000000" --ab "#ffffff" --af "#000000" --scb "#ffffff" --scf "#000000" --bdr "#000000"
 }
@@ -45,17 +70,27 @@ function uztd {
 	ls *.zip | awk -F'.zip' '{print "unzip "$0" -d "$1}' | sh
 }
 
+function kicad {
+	export GDK_SCALE=2
+	command kicad
+}
+
 export -f gr
 export -f term
+export -f javapaste
+export -f battery
+export -f batterylife
+export -f batterye
 export -f menu
 export -f setbg
 export -f rmbg
 export -f btul
 export -f cura
 export -f uztd
+export -f kicad
 
 PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/bin/$:$PATH"
+export PATH="$HOME/bin:$PATH"
 
 export XAUTHORITY=/home/lucas/.Xauthority
 

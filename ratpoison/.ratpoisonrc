@@ -28,8 +28,8 @@ bind q quit
 # rpbar
 # tell ratpoison to ignore rpbar
 unmanage rpbar
-# leave space for bars
-set padding 0 0 0 24
+# leave space for bars, 24 for desktop 39 for laptop
+set padding 0 0 0 39
 # start rpbar 
 exec rpbar
 # hooks
