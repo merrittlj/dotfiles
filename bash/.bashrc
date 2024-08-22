@@ -53,8 +53,12 @@ function setbg {
 	nitrogen --random ~/wallpapers --set-zoom-fill --save
 }
 
+function curbg {
+	grep "file" ~/.config/nitrogen/bg-saved.cfg | sed "s/file=//"
+}
+
 function rmbg {
-	rm $(grep "file" ~/.config/nitrogen/bg-saved.cfg | sed "s/file=//")
+	rm $(curbg)
 	setbg
 }
 
@@ -84,6 +88,7 @@ export -f batterye
 export -f menu
 export -f setbg
 export -f rmbg
+export -f curbg
 export -f btul
 export -f cura
 export -f uztd
