@@ -99,7 +99,8 @@ export PATH="$HOME/bin:$PATH"
 
 export XAUTHORITY=/home/lucas/.Xauthority
 
-export oc=/home/lucas/programming/embedded/ocelot
+export rv=/home/lucas/programming/embedded/raven
+export rvh=/home/lucas/programming/embedded/raven-hardware
 export dh=/home/lucas/programming/embedded/dash
 export la=/home/lucas/.local/share/Terraria/tModLoader/ModSources/LukaiAddons
 export tm=/home/lucas/second-hd/SteamLibrary/steamapps/common/tModLoader
