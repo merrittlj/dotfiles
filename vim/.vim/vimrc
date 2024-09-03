@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'https://github.com/tomasr/molokai.git' " Theme
 
 Plug 'https://github.com/bfrg/vim-cpp-modern.git' " CPP language additions
+Plug 'https://github.com/sirtaj/vim-openscad.git' " OpenSCAD language
 
 Plug 'vim-airline/vim-airline' " Airline status bar
 Plug 'LunarWatcher/auto-pairs' " Pair brackets, parens, etc.
@@ -16,7 +17,6 @@ Plug 'https://github.com/prabirshrestha/asyncomplete-lsp.vim' " Completion engin
 call plug#end()
 
 filetype plugin indent on
-set hidden
 
 let g:rehash256 = 1
 
