@@ -1,0 +1,11 @@
+"doas /home/lucas/bin/brightness-control /sys/class/backlight/gmux_backlight/brightness down 25"
+  XF86MonBrightnessDown
+
+"doas /home/lucas/bin/brightness-control /sys/class/backlight/gmux_backlight/brightness up 25"
+  XF86MonBrightnessUp
+
+"doas /home/lucas/bin/brightness-control /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness down 25"
+  XF86KbdBrightnessDown
+
+"doas /home/lucas/bin/brightness-control /sys/devices/platform/applesmc.768/leds/smc::kbd_backlight/brightness up 25"
+  XF86KbdBrightnessUp
