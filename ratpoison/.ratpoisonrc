@@ -1,4 +1,5 @@
-exec nitrogen --random wallpapers/dharmx/cold/kym-mackinnon-KrrVNx8R640-unsplash.jpg --set-zoom-fill --save
+# exec nitrogen --random wallpapers/dharmx/cold/kym-mackinnon-KrrVNx8R640-unsplash.jpg --set-zoom-fill --save
+exec setbg
 exec /usr/bin/rpws init 4 -k
 
 set winname title
@@ -7,7 +8,8 @@ set transgravity center
 set bargravity center
 set border 1
 set barborder 1
-set font "Libertinus Mono:size=13"
+# set font "Libertinus Mono:size=13"
+set font "Libertinus Mono:size=18"
 set bgcolor #353535
 set fgcolor #d7d7d7
 
@@ -15,6 +17,9 @@ escape M-t
 bind t exec term
 bind n exec qutebrowser
 bind h exec menu
+bind d exec rvp
+bind o exec setbg
+bind e exec rmbg
 
 # bind g exec rpws 1
 # bind c exec rpws 2
@@ -32,7 +37,8 @@ bind g exec wpars
 # tell ratpoison to ignore rpbar
 unmanage rpbar
 # leave space for bars, 24 for desktop 39 for laptop
-set padding 0 0 0 39
+# set padding 0 0 0 39
+set padding 0 0 0 24
 # start rpbar 
 exec rpbar
 # hooks

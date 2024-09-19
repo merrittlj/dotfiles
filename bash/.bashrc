@@ -74,9 +74,9 @@ function uztd {
 	ls *.zip | awk -F'.zip' '{print "unzip "$0" -d "$1}' | sh
 }
 
-function kicad {
+function licad {
 	export GDK_SCALE=2
-	command kicad
+	kicad
 }
 
 export -f gr
@@ -92,7 +92,7 @@ export -f curbg
 export -f btul
 export -f cura
 export -f uztd
-export -f kicad
+export -f licad
 
 PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
