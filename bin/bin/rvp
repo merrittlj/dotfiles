@@ -1,6 +1,0 @@
-#!/bin/bash
-kicad $rvh/kicad/kicad.kicad_pro &
-okular &
-qutebrowser &
-cd $rvh
-term
