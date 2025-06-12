@@ -1,0 +1,13 @@
+# wm independent hotkeys
+super + @g
+	kitty
+
+# wm(berry) hotkeys
+super + @w
+	berryc window_close
+
+super + @h
+	berryc window_monocle
+
+super + @q
+	berryc quit

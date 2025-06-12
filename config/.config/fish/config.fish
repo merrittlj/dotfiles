@@ -1,0 +1,1 @@
+set -gx MESA_LOADER_DRIVER_OVERRIDE crocus
