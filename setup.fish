@@ -5,10 +5,10 @@ git submodule init
 git submodule update
 
 # dirs that should be installable by all users, including root
-set base "bin" "xorg"
+set base "xorg"
 
 # dirs that should only be installed for the local user
-set useronly "git" "config"
+set useronly "git" "config" "urxvt" "scripts"
 
 function stowit -a dir app
 	# -v verbose, -R restow, -t target

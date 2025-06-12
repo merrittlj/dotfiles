@@ -1,0 +1,79 @@
+# wm independent hotkeys
+super + b
+	bemenu
+
+super + d 
+	urxvtc
+
+super + g
+	firefox
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# wm(berry) hotkeys
+super + {c,r,l}
+	berryc switch_workspace {0-2}
+
+super + shift + {c,r,l}
+	berryc send_to_workspace {0-2}
+
+super + a
+	# todo script
+
+super + o
+	# todo script
+
+super + e
+	berryc window_close
+
+super + u
+	berryc cycle_focus
+
+super + shift + {h,t,n,s}
+	berryc cardinal_focus {1-4}
+
+super + f
+	berryc fullscreen
+
+super + h
+	berryc window_monocle
+
+super + t
+	berryc window_center
+
+super + n
+	berryc snap_left
+
+super + s
+	berryc snap_right
+
+super + m
+	berryc window_resize 100 0 
+
+super + w
+	berryc window_resize 0 100 
+
+super + shift + m
+	berryc window_resize -100 0 
+
+super + shift + w
+	berryc window_resize 0 -100 
+
+super + v
+	berryc window_move 100 0 
+
+super + z
+	berryc window_move 0 100 
+
+super + shift + v
+	berryc window_move -100 0 
+
+super + shift + z
+	berryc window_move 0 -100 
+
+super + q
+	berryc quit
+
+~button1
+	berryc pointer_focus
