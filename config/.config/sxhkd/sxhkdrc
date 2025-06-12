@@ -1,13 +1,16 @@
 # wm independent hotkeys
-super + @g
+super + @g 
 	kitty
+
+super + Escape
+	pkill -USR1 -x sxhkd
 
 # wm(berry) hotkeys
 super + @w
 	berryc window_close
 
 super + @h
-	berryc window_monocle
+	berryc fullscreen
 
 super + @q
 	berryc quit

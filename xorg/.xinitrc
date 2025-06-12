@@ -1,5 +1,5 @@
 #!/bin/bash
 
 setxkbmap -layout us -variant dvp -option ctrl:swapcaps &
-sxhkd -c $HOME/.config/sxhkd/sxhkdrc &
+# do not include sxhkd here, do it in berry autostart
 exec berry
