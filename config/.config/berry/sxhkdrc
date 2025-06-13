@@ -30,8 +30,17 @@ super + e
 super + u
 	berryc cycle_focus
 
-super + shift + {h,t,n,s}
-	berryc cardinal_focus {1-4}
+super + shift + h
+	berryc cardinal_focus 2
+
+super + shift + t
+	berryc cardinal_focus 3
+
+super + shift + n
+	berryc cardinal_focus 1
+
+super + shift + s
+	berryc cardinal_focus 0
 
 super + f
 	berryc fullscreen
@@ -73,7 +82,7 @@ super + shift + z
 	berryc window_move 0 -100 
 
 super + q
-	berryc quit
+	fish ~/scripts/berry-clean.fish && berryc quit
 
 ~button1
 	berryc pointer_focus

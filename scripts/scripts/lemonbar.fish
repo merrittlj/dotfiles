@@ -1,3 +1,7 @@
+#!/usr/bin/env fish
+
+echo $fish_pid >> /tmp/berry-clean.pid
+
 function clock
 	echo -n (date "+%R")
 end
