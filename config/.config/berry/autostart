@@ -2,8 +2,7 @@
 
 sxhkd -c $HOME/.config/berry/sxhkdrc &
 
-(fish ~/scripts/lemonbar.fish | lemonbar -b -g 300x75+100+50 -B#372640 -F#bfbaac -f "Fantasque Sans Mono-14") &
-(sleep 1s && fish ~/scripts/lemonbar-above.fish) &
+fish ~/scripts/lemonbar-setup.fish
 
 # Set decoration geometry
 berryc border_width       5
