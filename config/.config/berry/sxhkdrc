@@ -1,6 +1,6 @@
 # wm independent hotkeys
 super + b
-	bemenu
+	fish ~/scripts/bemenu-launch.fish
 
 super + d 
 	urxvtc
