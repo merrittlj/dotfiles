@@ -12,7 +12,7 @@ set useronly "git" "config" "urxvt" "scripts"
 
 function stowit -a dir app
 	# -v verbose, -R restow, -t target
-	stow -v -R -t $dir $app
+	xstow -v -R -t $dir $app
 end
 
 # install apps available to users and root(base)
