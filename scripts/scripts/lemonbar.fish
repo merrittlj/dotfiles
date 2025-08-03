@@ -14,16 +14,18 @@ end
 
 function virtual
 	set current_desktop (xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}')
-	if test $current_desktop = 0
-		echo -n "o||"
-	else if test $current_desktop = 1
-		echo -n "|o|"
-	else if test $current_desktop = 2
-		echo -n "||o"
-	end
+	math "$current_desktop + 1"
+	#if test $current_desktop = 0
+	#	echo -n "o||"
+	#else if test $current_desktop = 1
+	#	echo -n "|o|"
+	#else if test $current_desktop = 2
+	#	echo -n "||o"
+	#end
 end
 
 while true
-	echo "%{c}"(clock)" "(battery)"%% "(virtual)
+	#echo "%{c}"(clock)" "(battery)"%% "(virtual)
+	echo (clock)" ["(virtual)"]"
 	sleep .1
 end

@@ -82,7 +82,7 @@ super + shift + z
 	berryc window_move 0 -100 
 
 super + q
-	fish ~/scripts/berry-clean.fish && berryc quit
+	fish ~/scripts/berry-clean.fish; berryc quit
 
 ~button1
 	berryc pointer_focus

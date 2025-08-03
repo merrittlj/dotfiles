@@ -1,14 +1,15 @@
 #!/bin/bash
 
-sxhkd -c $HOME/.config/berry/sxhkdrc &
-
-fish ~/scripts/lemonbar-setup.fish
+# save_monitor workspace(0-index) monitor(0 is primary)
+berryc save_monitor 0 0
+berryc save_monitor 1 0
+berryc save_monitor 2 1
 
 # Set decoration geometry
 berryc border_width       5
 berryc inner_border_width 3
 berryc title_height       0
-berryc top_gap            0
+berryc edge_gap         0 30 0 0
 
 # Set decoration colors
 berryc focus_color         292D3E
@@ -22,5 +23,7 @@ berryc text_unfocus_color  eeeeee
 berryc smart_place "true"
 berryc draw_text   "false"
 berryc edge_lock   "true"
-berryc set_font    "Fantasque Sans Mono-14"
+berryc set_font    "Fantasque Sans Mono-10"
 
+sxhkd -c $HOME/.config/berry/sxhkdrc &
+fish ~/scripts/lemonbar-setup.fish
