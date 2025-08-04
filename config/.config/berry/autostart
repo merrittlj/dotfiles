@@ -25,5 +25,8 @@ berryc draw_text   "false"
 berryc edge_lock   "true"
 berryc set_font    "Fantasque Sans Mono-10"
 
-sxhkd -c $HOME/.config/berry/sxhkdrc &
+nitrogen --set-zoom-fill --random ~/wallpapers --save &
+xrdb -merge ~/.Xresources
+urxvtd -q -o -f &
+sxhkd -c ~/.config/berry/sxhkdrc &
 fish ~/scripts/lemonbar-setup.fish

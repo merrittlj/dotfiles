@@ -9,4 +9,3 @@ set desx 0
 set desy (math $height - $barheight)
 
 fish -c "fish ~/scripts/lemonbar.fish | lemonbar -g '$barwidth'x'$barheight'+'$desx'+'$desy' -B#372640 -F#bfbaac -f 'Fantasque Sans Mono-8'" &
-#fish -c "sleep 1s && fish ~/scripts/lemonbar-above.fish" &

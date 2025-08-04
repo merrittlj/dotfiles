@@ -1,6 +1,6 @@
 # wm independent hotkeys
 super + b
-	fish ~/scripts/bemenu-launch.fish
+	pkill -USR1 -f lemonbar.fish	
 
 super + d 
 	urxvtc
