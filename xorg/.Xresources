@@ -65,6 +65,10 @@ URxvt.keysym.Control-Down: \033[1;5B
 URxvt.keysym.Control-Right: \033[1;5C
 URxvt.keysym.Control-Left: \033[1;5D
 
+URxvt.scrollTtyOutput: false
+URxvt.scrollWithBuffer: true
+URxvt.scrollTtyKeypress: true
+
 !! Copy Paste & Other Extensions
 !! URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
 !! URxvt.keysym.M-c: perl:clipboard:copy
